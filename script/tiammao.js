@@ -73,7 +73,7 @@ var mySwiper = new Swiper('.part3 .swiper-container', {
         el: '.swiper-pagination',
         // bulletClass : 'my-bullet',
         clickable: true,
-        type : 'bullets',
+        type: 'bullets',
     },
 
 })
@@ -96,3 +96,13 @@ $('.part3_list li').mouseleave(function () {
     $(this).find('.part3_listwrap').stop(true).slideUp(3);
 
 });
+
+
+
+// tab切换
+
+$('.part6_tab1 li').click(function () {
+    var index = $(this).index();
+    $(this).addClass('part6_active').siblings().removeClass(' part6_active');
+    $('.part6_content .part6_tabs2').eq(index).addClass('part6_shows1').siblings().removeClass('part6_shows1');
+})

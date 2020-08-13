@@ -14,6 +14,9 @@ a {
 h1, h2, h3, h4, h5, h5 {
   font-style: normal; }
 
+body {
+  background-color: #F5F5F5; }
+
 /* 首部样式 */
 body {
   min-width: 1230px; }
@@ -495,6 +498,373 @@ body {
   background-color: #F78E00; }
 
 .part4 {
-  background-color: red;
   width: 100%;
-  height: 400px; }
+  height: 359px; }
+
+.part4Wrap {
+  width: 1230px;
+  height: 359px;
+  margin: auto; }
+
+.part4Wrap h1 img {
+  margin: 30px 315px 20px 315px; }
+
+.part4list li {
+  float: left;
+  height: 269px;
+  position: relative; }
+
+.part4_imgs {
+  width: 238px;
+  display: block;
+  margin-right: 10px; }
+
+.part4_mask {
+  background: rgba(255, 255, 255, 0.25);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 238px;
+  height: 269px;
+  display: none; }
+
+.part4list li:hover .part4_mask {
+  display: block;
+  transition: all .3s ease-out; }
+
+.part4_none {
+  margin-right: 0px; }
+
+.part5 {
+  width: 100%;
+  height: 324px;
+  margin-top: 40px; }
+
+.part5_Wrap {
+  width: 1228px;
+  height: 324px;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #eee; }
+
+.part5_lis {
+  float: left;
+  width: 112px;
+  height: 108px;
+  padding: 0 5px;
+  position: relative; }
+
+.part5_img img {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100px;
+  height: 50px; }
+
+.part5_mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(51, 51, 51, 0.8);
+  width: 100%;
+  height: 100%;
+  display: none; }
+
+.part5_mask span {
+  height: 60px;
+  display: block;
+  line-height: 90px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff; }
+
+.part5_mask em {
+  font-style: normal;
+  display: block;
+  text-align: center;
+  line-height: 15px;
+  font-size: 12px;
+  width: 63px;
+  height: 18px;
+  background-color: #FF0036;
+  color: #fff;
+  border-radius: 9px;
+  margin-left: 28px; }
+
+.part5_lis:hover .part5_mask {
+  transition: all .3s ease-out;
+  display: block; }
+
+.part6 {
+  width: 100%;
+  margin-top: 20px;
+  height: 656px; }
+
+.part6Wrap {
+  width: 1230px;
+  height: 656px;
+  margin: auto; }
+
+.part6_img {
+  height: 28px;
+  line-height: 28px; }
+
+.part6_img img {
+  display: block;
+  width: 214px;
+  height: 25px; }
+
+.part6_cons {
+  height: 618px;
+  margin-top: 10px;
+  width: 1230px; }
+
+.part6_left {
+  float: left;
+  width: 235px;
+  height: 618px;
+  background-color: lightcoral;
+  position: relative; }
+
+.part6_left img {
+  width: 235px;
+  height: 618px;
+  z-index: 22; }
+
+.part6_lmask {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: rgba(255, 255, 255, 0.3);
+  height: 618px;
+  width: 235px;
+  display: none; }
+
+.part6_left:hover .part6_lmask {
+  display: block;
+  transition: all .3s ease-out; }
+
+.part6_l1 {
+  position: absolute;
+  width: 218px;
+  height: 64px;
+  bottom: 20%; }
+
+.part6_tit1 {
+  background: rgba(0, 0, 0, 0.9);
+  width: 70px;
+  height: 64px;
+  color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+.part6_tit1 span {
+  width: 36px;
+  line-height: 24px;
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.part6_tit2 {
+  position: absolute;
+  left: 70px;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 128px;
+  height: 64px;
+  color: #fff;
+  vertical-align: middle; }
+
+.part6_tit2 span {
+  margin: 8px 0px 0px 14px;
+  display: block;
+  line-height: 24px;
+  font-size: 18px; }
+
+.part6_tit2 .part6_maotai {
+  margin: 0px 0px 0px 14px; }
+
+.part6_l2 {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  bottom: 0px; }
+
+.part6_l2 img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px; }
+
+.part6_right {
+  float: left;
+  width: 995px;
+  height: 618px; }
+
+.part6_r1 {
+  width: 484px;
+  height: 301px;
+  margin-left: 13px;
+  padding-bottom: 15px;
+  float: left; }
+
+.part6_tabs {
+  width: 462px;
+  height: 282px;
+  margin: 10px;
+  position: relative;
+  background-color: #fff; }
+
+.part6_tab1 {
+  width: 462px;
+  height: 57px; }
+
+.part6_tab1 li {
+  width: 191px;
+  height: 57px;
+  padding: 0 20px;
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  color: #333;
+  line-height: 57px;
+  font-size: 20px; }
+
+.part6_tab1 .part6_active {
+  background-color: #00B262;
+  color: #fff; }
+
+.part6_content {
+  width: 462px;
+  height: 225px;
+  overflow: hidden; }
+
+.part6_tabs2 {
+  width: 462px;
+  height: 225px;
+  display: none; }
+
+.part6_content .part6_shows1 {
+  display: block; }
+
+.part6_tb1 {
+  position: absolute;
+  top: 153px;
+  left: 0px;
+  height: 87px;
+  width: 291px;
+  z-index: 20;
+  background: url(../image/part6_4.png) 0 center no-repeat; }
+
+.part6_tbcon1 {
+  margin: 8px 0px 0px 26px;
+  height: 32px;
+  width: 200px; }
+
+.part6_tbcon1 img {
+  display: block;
+  width: 23px;
+  height: 23px;
+  float: left;
+  margin-top: 6px; }
+
+.part6_tbcon1 span {
+  margin-left: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  float: left;
+  line-height: 32px;
+  color: #00B262; }
+
+.part6_tbtwo span {
+  display: block;
+  margin-left: 26px;
+  font-size: 20px; }
+
+.part6_tbcon2 {
+  position: relative;
+  width: 230px;
+  float: right;
+  height: 210px; }
+
+.part6_tbcon2 img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 10px 30px 0px 0px;
+  float: right; }
+
+.part6_tbmask {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  height: 200px;
+  width: 200px;
+  top: 10px;
+  right: 30px;
+  display: none; }
+
+.part6_tbcon2:hover .part6_tbmask {
+  display: block; }
+
+.part6_r2 {
+  float: left;
+  width: 235px;
+  height: 301px;
+  margin-left: 13px;
+  padding-bottom: 15px; }
+
+.part6_r2s {
+  margin-left: 14px;
+  padding-bottom: 0px; }
+
+.part6_w1 {
+  height: 299px;
+  width: 233px;
+  border: 1px solid #eee;
+  position: relative; }
+
+.part6_w1:hover {
+  border: 1px solid #FF0036; }
+
+.part6_w1 img {
+  width: 185px;
+  height: 185px;
+  display: block;
+  margin-left: 24px;
+  margin-top: 20px; }
+
+.part6_w11 {
+  width: 135px;
+  margin: 8px auto;
+  font-size: 14px;
+  color: #333;
+  line-height: 20px;
+  overflow: hidden;
+  height: 40px; }
+
+.part6_price {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  color: #FF0036;
+  line-height: 18px; }
+
+.part6_mask {
+  height: 299px;
+  width: 233px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  left: 0px;
+  top: 0px;
+  display: none; }
+
+.part6_w1:hover .part6_mask {
+  display: block;
+  transition: all .3s ease-out; }
