@@ -380,6 +380,11 @@ body {
   cursor: pointer;
   display: block; }
 
+.part2_list li img {
+  height: 30px;
+  margin-top: 3px;
+  width: 100px; }
+
 .part2_list li a:hover {
   color: #ff0036; }
 

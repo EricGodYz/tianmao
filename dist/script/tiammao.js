@@ -3,7 +3,7 @@
 // 我的淘宝
 $('.nav1').mouseenter(function () {
     var index = $(this).index();
-    $(this).find('.nav_list1').stop(true).slideDown(30);
+    $(this).find('.nav_list1').stop(true).slideDown(3);
     $('.nav1 .nav_list1').css('border', '1px solid #e5e5e5');
     $(this).find('.nav_list1').css('border-top', 'none');
     $(this).css('border', '1px solid #e5e5e5');
@@ -12,14 +12,14 @@ $('.nav1').mouseenter(function () {
 
 });
 $('.nav1').mouseleave(function () {
-    $(this).find('.nav_list1').stop(true).slideUp(30);
+    $(this).find('.nav_list1').stop(true).slideUp(3);
     $(this).css('border', 'none');
 });
 
 //  商家支持
 $('.nav_sup').mouseenter(function () {
     var index = $(this).index();
-    $(this).find('.nav_lists1').stop(true).slideDown(30);
+    $(this).find('.nav_lists1').stop(true).slideDown(3);
     $(this).find('.nav_lists1').css('border', '1px solid #e5e5e5');
     $(this).find('.nav_lists1').css('border-top', 'none');
     $(this).css('border', '1px solid #e5e5e5');
@@ -27,14 +27,14 @@ $('.nav_sup').mouseenter(function () {
 
 });
 $('.nav_sup').mouseleave(function () {
-    $(this).find('.nav_lists1').stop(true).slideUp(30);
+    $(this).find('.nav_lists1').stop(true).slideUp(3);
     $(this).css('border', 'none');
 });
 
 // 手机版
 $('.nav2').mouseenter(function () {
     var index = $(this).index();
-    $(this).find('.imgs').stop(true).slideDown(30);
+    $(this).find('.imgs').stop(true).slideDown(3);
     $(this).find('.imgs').css('border', '1px solid #e5e5e5');
     $(this).find('.imgs').css('border-top', 'none');
     $(this).css('border', '1px solid #e5e5e5');
@@ -43,13 +43,13 @@ $('.nav2').mouseenter(function () {
 
 });
 $('.nav2').mouseleave(function () {
-    $(this).find('.imgs').stop(true).slideUp(30);
+    $(this).find('.imgs').stop(true).slideUp(3);
     $(this).css('border', 'none');
 });
 // 网站导航
 $('.nav3').mouseenter(function () {
     var index = $(this).index();
-    $(this).find('.nav_list2').stop(true).slideDown(30);
+    $(this).find('.nav_list2').stop(true).slideDown(3);
     $(this).find('.nav_list2').css('border', '1px solid #e5e5e5');
     $(this).find('.nav_list2').css('border-top', 'none');
     $(this).css('border', '1px solid #e5e5e5');
@@ -57,7 +57,7 @@ $('.nav3').mouseenter(function () {
 
 });
 $('.nav3').mouseleave(function () {
-    $(this).find('.nav_list2').stop(true).slideUp(30);
+    $(this).find('.nav_list2').stop(true).slideUp(3);
     $(this).css('border', 'none');
 });
 
