@@ -1,0 +1,365 @@
+@charset "UTF-8";
+/* 首部样式 */
+body {
+  min-width: 1230px; }
+
+.nav {
+  width: 100%;
+  height: 32px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #e5e5e5; }
+
+.navWrap {
+  width: 1230px;
+  height: 32px;
+  /* background-color: brown; */
+  margin: auto; }
+
+.nav_left {
+  float: left;
+  height: 32px;
+  color: #999; }
+
+.nav_left em {
+  float: left;
+  line-height: 32px;
+  font-size: 12px;
+  font-style: normal; }
+
+.nav_left a {
+  float: left;
+  line-height: 32px;
+  font-size: 12px;
+  padding: 0 10px 0 20px; }
+
+.nav_left a:hover {
+  color: #FF0036; }
+
+/* 导航右边 */
+.nav_right {
+  float: right;
+  height: 32px;
+  background-color: #f2f2f2; }
+
+.nav_right li {
+  float: left;
+  position: relative;
+  padding: 0 10px;
+  cursor: pointer;
+  z-index: 20; }
+
+.nav_right li:hover {
+  background-color: #fff;
+  /* border: 1px solid #e5e5e5 ; */ }
+
+.nav1 {
+  position: relative; }
+
+.nav1 .nav_list1:hover {
+  /* border: 1px solid #e5e5e5; */ }
+
+/* 图标 */
+.phone .icon-shouji {
+  color: #FF0036;
+  font-size: 12px; }
+
+.nav_shop .icon-gouwuche1 {
+  color: #FF0036;
+  font-size: 12px; }
+
+.nav3 .icon-jiegouwuxiangqingliebiao-liebiao {
+  color: #FF0036;
+  font-size: 12px; }
+
+.nav1 .icon-sanjiaojiantou {
+  color: #999;
+  font-size: 6px;
+  position: absolute;
+  top: 14px;
+  left: 60px; }
+
+.navSan .icon-sanjiaojiantou {
+  position: absolute;
+  left: 48px;
+  top: 14px; }
+
+.nav_right li a {
+  font-size: 12px;
+  line-height: 32px;
+  cursor: pointer; }
+
+.nav_right li a:hover {
+  color: #FF0036; }
+
+.nav_right li .nav_list1 {
+  display: none;
+  position: absolute;
+  left: -1px;
+  top: 32px;
+  width: 100px;
+  background-color: #fff;
+  /* line-height: 20px; */
+  /* display: block;   */ }
+
+.nav_right li .nav_list1 a {
+  line-height: 25px;
+  width: 100px;
+  font-size: 12px; }
+
+.nav_right li .imgs {
+  position: absolute;
+  left: -50px;
+  top: 32px;
+  display: none;
+  width: 172px;
+  background-color: #fff; }
+
+.nav_right li .imgs .imgs1 {
+  margin-left: 16px; }
+
+.nav_lists1 {
+  width: 120px;
+  position: absolute;
+  left: -53px;
+  top: 32px;
+  display: none;
+  background-color: #fff; }
+
+/* .nav_lists1  .navlist1 div{
+    line-height: 2px;
+    border-bottom: 2px dotted #ccc;
+    margin:5px 0;
+} */
+.nav_lists1 .navlist1 h4 {
+  font-size: 14px;
+  line-height: 24px;
+  width: 100px;
+  color: #666;
+  font-weight: 700;
+  /* float: left; */ }
+
+.nav_lists1 .navlist1 li {
+  width: 50px;
+  /* float: left; */
+  font-size: 12px;
+  color: #333;
+  line-height: 24px;
+  padding: 0;
+  margin-right: 10px; }
+
+.nav3 .nav_list2 {
+  position: absolute;
+  left: -1144px;
+  top: 32px;
+  width: 1228px;
+  display: none;
+  /* height: 200px; */
+  background-color: #fff;
+  min-height: 166px; }
+
+.nav3 .navlistc1 {
+  float: left;
+  margin-left: 20px;
+  width: 450px; }
+
+.nav3 .navlistc1 h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  color: orange; }
+
+.nav3 .navlistc1 .hot li a {
+  float: left;
+  width: 50px;
+  font-size: 12px;
+  line-height: 30px;
+  margin-right: 40px;
+  color: #333;
+  display: block; }
+
+.nav3 .navlistc1 .hot li {
+  padding: 0; }
+
+.nav3 .navlistc1 {
+  float: left;
+  margin-left: 20px;
+  width: 450px; }
+
+.nav3 .navlistc1 h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  color: orange; }
+
+.nav3 .navlistc1 .hot li a {
+  float: left;
+  width: 50px;
+  font-size: 12px;
+  line-height: 30px;
+  margin-right: 40px;
+  color: #333;
+  display: block; }
+
+.nav3 .navlistc1 .hot li a:hover {
+  color: orange;
+  text-decoration: underline; }
+
+.nav3 .navlistc2 {
+  float: left;
+  margin-left: 40px;
+  width: 450px; }
+
+.nav3 .navlistc2 h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #1149F0; }
+
+.nav3 .navlistc2 .market li {
+  padding: 0; }
+
+.nav3 .navlistc2 .market li a {
+  float: left;
+  width: 50px;
+  font-size: 12px;
+  line-height: 30px;
+  margin-right: 40px;
+  color: #333;
+  display: block; }
+
+.nav3 .navlistc2 .market li a:hover {
+  color: #1149F0;
+  text-decoration: underline; }
+
+.nav3 .navlistc3 {
+  float: left;
+  margin-left: 20px;
+  width: 180px; }
+
+.nav3 .navlistc3 h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #666; }
+
+.nav3 .navlistc3 .help li {
+  padding: 0; }
+
+.nav3 .navlistc3 .help li a {
+  float: left;
+  width: 60px;
+  font-size: 12px;
+  line-height: 30px;
+  margin-right: 10px;
+  color: #333;
+  display: block; }
+
+.nav3 .navlistc3 .help li a:hover {
+  color: #333;
+  text-decoration: underline; }
+
+/* part1 */
+.part1 {
+  width: 100%;
+  height: 130px; }
+
+.part1Wrap {
+  width: 1230px;
+  /* background-color: burlywood; */
+  margin: auto;
+  height: 130px; }
+
+.part1Wrap .logo {
+  width: 290px;
+  height: 130px;
+  float: left; }
+
+.part1_right {
+  float: left;
+  margin-left: 100px;
+  height: 78px;
+  width: 623px; }
+
+.part1_right form {
+  width: 623px;
+  padding-top: 38px;
+  height: 40px;
+  /* overflow: hidden; */ }
+
+.part1_txt {
+  float: left;
+  width: 475px;
+  height: 25.1px;
+  padding: 5px 3px 5px 5px;
+  border-width: 3px 0px 3px 3px;
+  border: solid #FF0036;
+  font-size: 14px;
+  color: #999; }
+
+.part1_btn {
+  float: left;
+  width: 132px;
+  height: 40px;
+  /* box-sizing: content-box; */
+  background-color: #FF0036;
+  border: 0px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 40px;
+  /* border-width: 2px 0px; */
+  /* border: solid #FF0036; */ }
+
+.search {
+  width: 100%;
+  height: 50px;
+  background-color: #FE0C3F;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  display: none; }
+
+.search_Wrap {
+  width: 1230px;
+  margin: auto;
+  height: 50px; }
+
+.serach_left {
+  float: left; }
+
+.serach_left img {
+  margin-top: 8px;
+  z-index: 20;
+  display: block;
+  width: 125px;
+  height: 35px; }
+
+.search_right {
+  margin-left: 245px;
+  padding-top: 12px;
+  height: 30px;
+  float: left; }
+
+.search_text1 {
+  float: left;
+  width: 640px;
+  height: 20px;
+  padding: 5px 3px 5px 5px;
+  background-color: #fff;
+  border: none;
+  color: #ccc; }
+
+.search_text2 {
+  float: left;
+  width: 90px;
+  height: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  background-color: #FF0036;
+  text-align: center; }

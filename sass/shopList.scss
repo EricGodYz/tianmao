@@ -1,0 +1,199 @@
+
+// shoplist1
+.shoplist1{
+    width: 100%;
+    height: 360px;
+    margin-top: 30px;
+    background-color: #141414;
+}
+.shoplist1_Wrap{
+    width: 990px;
+    height: 360px;
+    margin: auto;
+    background-color: greenyellow;
+}
+.swiper-container{
+    width: 990px;
+    height: 360px;
+}
+.swiper-container .swiper-pagination-bullet{
+    background-color: #ccc;
+}
+.swiper-container .swiper-pagination-bullet-active{
+    background-color: orange;
+}
+
+
+
+// 商品内容2
+.shoplist2_nav{
+    width: 100%;
+    height: 68px;
+
+}
+.shoplist2_nav img{
+    display: block;
+    width: 990px;
+    height: 68px;
+    margin: 10px auto ;
+}
+.shoplist2{
+    width: 100%;
+    
+    margin-top: 40px;
+}
+.shoplist2 .shoplist2_Wrap{
+    
+    width: 1000px;
+    margin: auto;
+    
+    
+
+}
+.shoplist2_imgs{
+    width: 1000px;
+    overflow: hidden;
+}
+.shoplist2_imgs .shoplist2_con1{
+    width: 240px;
+    height: 360px;
+    margin: 0 10px 10px 0px;
+    background-color: lemonchiffon;
+    float: left;
+
+   
+}
+.shoplist2_imgs .shoplist2_cons1{
+    margin-right: 0px;
+}
+.shoplist2_conimg{
+    height: 240px;
+    height: 240px;
+    display: block;
+}
+.shoplist2_box1 p{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    color: #000;
+
+}
+.shoplist2_box2{
+    width: 225px;
+    height: 35px;
+    padding: 10px 0px 10px 15px;
+    position: relative;
+}
+.shoplist2_box2 img{
+    float: left;
+    width: 70px;
+    height: 35px;
+}
+.shoplist2_box3{
+    position: absolute;
+    left: 87px;
+    top: 0px;
+}
+.shoplist2_box3 span{
+    display: block;
+    margin-top: 8px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #a1a1a1;
+    margin-left: 60px;
+}
+.shoplist2_box3 i{
+    margin-left: 60px;;
+    color: #b98f4d;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    
+}
+.shoplist2_box4{
+    height: 28px;
+    width: 230px;
+    background-color: #b98f4d;
+    border: 1px solid #b98f4d;
+}
+.shoplist2_box4 span{
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+// 商品列表3的样式
+.shoplist3_nav{
+    width: 100%;
+    height: 68px;
+
+}
+.shoplist3_nav img{
+    display: block;
+    width: 990px;
+    height: 68px;
+    margin: 10px auto ;
+}
+.shoplist3{
+    width: 100%;
+    margin-top: 40px;
+}
+.shoplist3 .shoplist3_Wrap{
+    width: 1000px;
+    margin: auto;
+}
+
+// 右边滚动的样式
+.shopRoller{
+    height: 455px;
+    position: fixed;
+    width: 100px;
+    left: 50%;
+    bottom: 200px;
+    margin-left: 550px;
+    overflow: hidden;
+    // display: none;
+    
+}
+.shopRoller_Wrap{
+    width: 100px;
+    height: 455px;
+    background-color: #8035fb;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.shoproller_img{
+    width: 76px;
+    display: block;
+    height: 76px;
+    margin-left: 12px;
+    margin-top: 9px;
+    padding:1px;
+}
+.shopRoller_list{
+    width: 100px;
+    height: 25px;
+}
+.shopRoller_list:hover{
+    background-color: rgba($color: #333, $alpha: .7);
+}
+.shopRoller_list img{
+    width:16px;
+    height:16px;
+    margin: 4px 5px;
+    float: left;
+   
+}
+.shopRoller_list span{
+    line-height: 25px;
+    display: block;
+    color: #fff;
+    text-align: left;
+    font-size: 12px;
+}

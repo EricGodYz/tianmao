@@ -1,67 +1,8 @@
-
-// 导航的头部
-// 我的淘宝
-$('.nav1').mouseenter(function () {
-    var index = $(this).index();
-    $(this).find('.nav_list1').stop(true).slideDown(3);
-    $('.nav1 .nav_list1').css('border', '1px solid #e5e5e5');
-    $(this).find('.nav_list1').css('border-top', 'none');
-    $(this).css('border', '1px solid #e5e5e5');
-    $(this).css('border-bottom', 'none');
-
-
-});
-$('.nav1').mouseleave(function () {
-    $(this).find('.nav_list1').stop(true).slideUp(3);
-    $(this).css('border', 'none');
-});
-
-//  商家支持
-$('.nav_sup').mouseenter(function () {
-    var index = $(this).index();
-    $(this).find('.nav_lists1').stop(true).slideDown(3);
-    $(this).find('.nav_lists1').css('border', '1px solid #e5e5e5');
-    $(this).find('.nav_lists1').css('border-top', 'none');
-    $(this).css('border', '1px solid #e5e5e5');
-    $(this).css('border-bottom', 'none');
-
-});
-$('.nav_sup').mouseleave(function () {
-    $(this).find('.nav_lists1').stop(true).slideUp(3);
-    $(this).css('border', 'none');
-});
-
-// 手机版
-$('.nav2').mouseenter(function () {
-    var index = $(this).index();
-    $(this).find('.imgs').stop(true).slideDown(3);
-    $(this).find('.imgs').css('border', '1px solid #e5e5e5');
-    $(this).find('.imgs').css('border-top', 'none');
-    $(this).css('border', '1px solid #e5e5e5');
-    $(this).css('border-bottom', 'none');
-
-
-});
-$('.nav2').mouseleave(function () {
-    $(this).find('.imgs').stop(true).slideUp(3);
-    $(this).css('border', 'none');
-});
-// 网站导航
-$('.nav3').mouseenter(function () {
-    var index = $(this).index();
-    $(this).find('.nav_list2').stop(true).slideDown(3);
-    $(this).find('.nav_list2').css('border', '1px solid #e5e5e5');
-    $(this).find('.nav_list2').css('border-top', 'none');
-    $(this).css('border', '1px solid #e5e5e5');
-    $(this).css('border-bottom', 'none');
-
-});
-$('.nav3').mouseleave(function () {
-    $(this).find('.nav_list2').stop(true).slideUp(3);
-    $(this).css('border', 'none');
-});
-
-
+// 
+$('.nav').load('./header.html');
+// $('.search').load('./header.html');
+// $('.part1').load('./header.html');
+$('.footer').load('./bottom.html');
 
 
 // part3
@@ -87,20 +28,8 @@ for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
 }
 
 
-
-// 轮播数据栏
-// $('.part3_list li').mouseenter(function () {
-//     var index = $(this).index();
-//     $(this).find('.part3_listwrap').stop(true).slideDown(3);
-
-
-// });
-// $('.part3_list li').mouseleave(function () {
-//     $(this).find('.part3_listwrap').stop(true).slideUp(3);
-
-// });
 // 轮播数据ajax请求
-$('.part3_list li').mouseenter(function () {
+$('.shopRoller_list span').click(function () {
     var index = $(this).index();
     console.log(index);
     // $(this).find('.part3_listwrap').css('display', 'block');
@@ -168,85 +97,6 @@ $('.part6_tab1 li').mouseenter(function () {
 })
 
 
-
-
-
-
-// 顶部效果
-var topSearch = {
-    init: function () {
-        this.bindEvent();
-    },
-    bindEvent: function () {
-        var flag = false;
-        // var origin=false;
-        window.onscroll = function () {
-            var h = document.body.scrollTop || document.documentElement.scrollTop;
-            // console.log(h);
-
-            if (h > 700) {
-                flag = true;
-            }
-            if (h > 700 && h <= 1300) {
-                $(".roller .daohang").css({
-                    background: "#64c333"
-                })
-            } else {
-                $(".roller .daohang").css({
-                    background: "rgba(0,0,0,.6)"
-                })
-            }
-            if (h > 1300 && h <= 1700) {
-                $(".roller .chaoshi").css({
-                    background: "red"
-                })
-            } else {
-                $(".roller .chaoshi").css({
-                    background: "rgba(0,0,0,.6)"
-                })
-            }
-            if (h >1700 && h <=2200) {
-                $(".roller .meili").css({
-                    background: "yellow"
-                })
-            } else {
-                $(".roller .meili").css({
-                    background: "rgba(0,0,0,.6)"
-                })
-            }
-            if (h < 700) {
-                flag = false;
-            }
-            console.log(flag)
-            if (flag) {
-                $(".search").slideDown();
-                $(".search").css({
-                    display: 'block'
-                })
-                $('.roller').stop(true).slideDown();
-                $(".roller").css({
-                    display: 'block',
-                    height:'369px'
-                })
-            }
-            else {
-                $(".search").slideUp();
-                $(".search").css({
-                    display: 'none'
-                })
-                $('.roller').stop(true).slideUp();
-                $(".roller").css({
-                    display: 'none',
-                    height:'369px'
-                })
-            }
-        }
-    }
-}
-topSearch.init();
-
-
-
  //导航缩略图（返回顶部等）
  var sNav={
     init:function(){
@@ -254,33 +104,63 @@ topSearch.init();
         this.bindEvent();
     },
     getEle:function(){
+        this.daohang = $('.daohang');
         this.chaoshi=$(".chaoshi");
+        this.guoji = $('.guoji');
         this.meili=$(".meili");
+        this.chaodian= $('.chaodian');
+        this.jujia = $('.jujia');
+        this.aichao = $('.aichao');
+        this.huwai = $('.huwai');
         this.xihuan=$(".xihuan");
         this.dingbu=$(".dingbu");
         this.docu=document.documentElement||document.body;
     },
     bindEvent:function(){
-        
         var _this=this;
         //返回顶部
         this.dingbu.click(function(){
-            $(_this.docu).stop(true).animate({scrollTop:"0px"},2000)
+            $(_this.docu).stop(true).animate({
+                "scrollTop":0
+            },300)
         });
         //天猫超市
         this.chaoshi.click(function(){
-            $(_this.chaoshi).stop(true).animate({scrollTop:"1200px"},2000)
+            $(_this.docu).stop(true).animate({
+                "scrollTop":1200
+            });
          
         })
-        //天猫国际
-        this.meili.click(function(){
-           
-           
+        // 天猫国际
+        this.guoji.click(function(){
+            $(_this.docu).stop(true).animate({
+                "scrollTop":1200
+            });
         })
-       
+        //美丽人生
+        this.meili.click(function(){   
+            $(_this.docu).stop(true).animate({scrollTop:1900},2000);
+        })
+        // 潮流酷玩
+        this.chaodian.click(function(){   
+            $(_this.docu).stop(true).animate({scrollTop:1900},2000);
+        })
+        // 居家生活
+        this.jujia.click(function(){   
+            $(_this.docu).stop(true).animate({scrollTop:1900},2000);
+        })
+        // 打造爱巢
+        this.aichao.click(function(){   
+            $(_this.docu).stop(true).animate({scrollTop:1900},2000);
+        })
+        // 户外出行
+        this.huwai.click(function(){   
+            $(_this.docu).stop(true).animate({scrollTop:1900},2000);
+        })
+        // 猜你喜欢
         this.xihuan.click(function(){
-          
-           
+            
+            $(_this.docu).stop(true).animate({scrollTop:2200},2000)
         })
     }
 }
