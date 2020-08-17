@@ -69,7 +69,7 @@ var topSearch = {
         var flag = false;
         
         window.onscroll = function () {
-            var h = document.body.scrollTop || document.documentElement.scrollTop;
+            let h = document.body.scrollTop || document.documentElement.scrollTop;
             // console.log(h);
 
             if (h > 700) {
@@ -107,7 +107,7 @@ var topSearch = {
             }
             // console.log(flag)
             if (flag) {
-                $(".search").slideDown();
+                $(".search").stop(true).slideDown();
                 $(".search").css({
                     display: 'block'
                 })
@@ -129,7 +129,7 @@ var topSearch = {
                 },100)
             }
             else {
-                $(".search").slideUp();
+                $(".search").stop(true).slideUp();
                 $(".search").css({
                     display: 'none'
                 })

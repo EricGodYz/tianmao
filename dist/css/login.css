@@ -1,0 +1,28 @@
+.logincon {
+  width: 100%;
+  height: 600px;
+  background-color: #890408; }
+
+.loginconWrap {
+  width: 1190px;
+  height: 600px;
+  margin: 10px auto;
+  background-color: lightgreen;
+  position: relative; }
+
+.loginconWrap img {
+  width: 630px;
+  height: 440px;
+  position: absolute;
+  top: 80px;
+  left: 75px; }
+
+.loginright {
+  width: 300px;
+  min-height: 300px;
+  padding: 25px 25px 23px 25px;
+  color: #6c6c6c;
+  background-color: #fff;
+  float: right;
+  margin-top: 94px;
+  margin-right: 78px; }

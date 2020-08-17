@@ -8,7 +8,7 @@ $('.footer').load('./bottom.html');
 
 // shoplist1轮播图
 var mySwiper = new Swiper('.shoplist1_Wrap .swiper-container', {
-	autoplay: {
+    autoplay: {
         delay: 1000,//1秒切换一次
         disableOnInteraction: false,
     },
@@ -27,7 +27,7 @@ $.ajax({
     success: function (json) {
 
         // $('.shoplist2_Wrap').html('');
-        $.each(json,function(index,item){
+        $.each(json, function (index, item) {
             var newLi = `<li class="shoplist2_con1">
                         <img class="shoplist2_conimg"  src="${json[index].imgurl}" alt="">
                         <div class="shoplist2_box1">
@@ -48,9 +48,9 @@ $.ajax({
                      </li>`;
             $('.shoplist2 .shoplist2_imgs').append(newLi);
 
-        })  
+        })
 
-        
+
     }
 
 })
@@ -64,7 +64,7 @@ $.ajax({
     success: function (json) {
 
         // $('.shoplist2_Wrap').html('');
-        $.each(json,function(index,item){
+        $.each(json, function (index, item) {
             var newLi = `<li class="shoplist2_con1">
                         <img class="shoplist2_conimg"  src="${json[index].imgurl}" alt="">
                         <div class="shoplist2_box1">
@@ -85,9 +85,9 @@ $.ajax({
                      </li>`;
             $('.shoplist3 .shoplist2_imgs').append(newLi);
 
-        })  
+        })
 
-        
+
     }
 
 })
@@ -106,31 +106,31 @@ var toshop = {
             if (h > 700) {
                 flag = true;
             }
-            if (h > 500 && h <=1300) {
-                $(".shopdapai").css({
+            if (h > 500 && h <= 1300) {
+                $(".shopRoller .shopdapai").css({
                     background: "#333"
                 })
             } else {
-                $(".shopdapai").css({
-                    background:" #8035fb"
+                $(".shopRoller .shopdapai").css({
+                    background: " #8035fb"
                 })
             }
             if (h > 1300 && h <= 1700) {
-                $(".shopjinkou").css({
+                $(".shopRoller  .shopjinkou").css({
                     background: "#333"
                 })
             } else {
-                $(".shopjinkou").css({
-                    background:" #8035fb"
+                $(".shopRoller  .shopjinkou").css({
+                    background: " #8035fb"
                 })
             }
-            if (h >1700 && h <=2200) {
-                $(".shopbaiyuan").css({
+            if (h > 1700 && h <= 2200) {
+                $(".shopRoller  .shopbaiyuan").css({
                     background: "#333"
                 })
             } else {
-                $(".shopbaiyuan").css({
-                    background:" #8035fb"
+                $(".shopRoller  .shopbaiyuan").css({
+                    background: " #8035fb"
                 })
             }
             if (h < 700) {
@@ -139,16 +139,16 @@ var toshop = {
             // console.log(flag)
             if (flag) {
                 $('.shopRoller_Wrap').stop(true).animate({
-                    left:0,
-                    bottom:0,
-                    
-                },100)
+                    left: 0,
+                    bottom: 0,
+
+                }, 100)
             }
             else {
                 $(".shopRoller_Wrap").stop(true).animate({
-                    left:-100,
-                    bottom:-455
-                },50)
+                    left: -100,
+                    bottom: -455
+                }, 50)
             }
         }
     }
@@ -157,120 +157,120 @@ toshop.init();
 
 
 //导航缩略图（返回顶部等）
-var sNav={
-    init:function(){
+var sNav = {
+    init: function () {
         this.getEle();
         this.bindEvent();
     },
-    getEle:function(){
+    getEle: function () {
         this.shopdapai = $('.shopdapai');
-        this.shopguoji=$(".shopguoji");
+        this.shopguoji = $(".shopguoji");
         this.shopjinkou = $('.shopjinkou');
-        this.shopbaiyuan=$(".shopbaiyuan");
-        this.shopquanqiu= $('.shopquanqiu');
+        this.shopbaiyuan = $(".shopbaiyuan");
+        this.shopquanqiu = $('.shopquanqiu');
         this.shopzhenxuan = $('.shopzhenxuan');
-        
-        this.docu=document.documentElement||document.body;
+
+        this.docu = document.documentElement || document.body;
     },
-    bindEvent:function(){
-        var _this=this;
+    bindEvent: function () {
+        var _this = this;
         //返回顶部
-        this.shopzhenxuan.click(function(){
+        this.shopzhenxuan.click(function () {
             $(_this.docu).stop(true).animate({
-                "scrollTop":0
-            },300)
+                "scrollTop": 0
+            }, 300)
         });
         //大牌精选
-        this.shopdapai.click(function(){
+        this.shopdapai.click(function () {
             $(_this.docu).stop(true).animate({
-                "scrollTop":500
+                "scrollTop": 500
             });
-         
+
         })
         // 国际大牌
-        this.shopguoji.click(function(){
+        this.shopguoji.click(function () {
             $(_this.docu).stop(true).animate({
-                "scrollTop":500
+                "scrollTop": 500
             });
         })
         //进口原装
-        this.shopjinkou.click(function(){   
-            $(_this.docu).stop(true).animate({scrollTop:1300},1000);
+        this.shopjinkou.click(function () {
+            $(_this.docu).stop(true).animate({ scrollTop: 1300 }, 1000);
         })
         // 百元好货
-        this.shopbaiyuan.click(function(){   
-            $(_this.docu).stop(true).animate({scrollTop:1300},1000);
+        this.shopbaiyuan.click(function () {
+            $(_this.docu).stop(true).animate({ scrollTop: 1300 }, 1000);
         })
         // 全球鲜果
-        this.shopquanqiu.click(function(){   
-            $(_this.docu).stop(true).animate({scrollTop:1300},1000);
+        this.shopquanqiu.click(function () {
+            $(_this.docu).stop(true).animate({ scrollTop: 1300 }, 1000);
         })
-       
+
     }
 }
 sNav.init();
 
 
 
-   
-//
-     function toshop(){
-        var flag = false;
-        window.onscroll = function () {
-            var h = document.body.scrollTop || document.documentElement.scrollTop;
-            console.log(h);
-            if (h > 700) {
-                flag = true;
-            }
-            if (h > 500 && h <=1300) {
-                $(".shopdapai").css({
-                    background: "#333"
-                })
-            } else {
-                $(".shopdapai").css({
-                    background:" #8035fb"
-                })
-            }
-            if (h > 1300 && h <= 1700) {
-                $(".shopjinkou").css({
-                    background: "#333"
-                })
-            } else {
-                $(".shopjinkou").css({
-                    background:" #8035fb"
-                })
-            }
-            if (h >1700 && h <=2200) {
-                $(".shopbaiyuan").css({
-                    background: "#333"
-                })
-            } else {
-                $(".shopbaiyuan").css({
-                    background:" #8035fb"
-                })
-            }
-            if (h < 700) {
-                flag = false;
-            }
-            // console.log(flag)
-            if (flag) {
-                $('.shopRoller_Wrap').stop(true).animate({
-                    left:0,
-                    bottom:0,
-                    // height:369
-                },100)
-            }
-            else {
-                $(".shopRoller_Wrap").stop(true).animate({
-                    left:-100,
-                    bottom:-455
-                },50)
-            }
-        }
- 
 
-     }
-     toshop();
+//
+function toShop() {
+    var flag1 = false;
+    window.onscroll = function () {
+        let h = document.body.scrollTop || document.documentElement.scrollTop;
+        console.log(h);
+        if (h > 700) {
+            flag1 = true;
+        }
+        if (h > 500 && h <= 1300) {
+            $(".shopdapai").css({
+                background: "#333"
+            })
+        } else {
+            $(".shopdapai").css({
+                background: " #8035fb"
+            })
+        }
+        if (h > 1300 && h <= 1700) {
+            $(".shopjinkou").css({
+                background: "#333"
+            })
+        } else {
+            $(".shopjinkou").css({
+                background: " #8035fb"
+            })
+        }
+        if (h > 1700 && h <= 2200) {
+            $(".shopbaiyuan").css({
+                background: "#333"
+            })
+        } else {
+            $(".shopbaiyuan").css({
+                background: " #8035fb"
+            })
+        }
+        if (h < 700) {
+            flag1 = false;
+        }
+        // console.log(flag)
+        if (flag1) {
+            $('.shopRoller_Wrap').stop(true).animate({
+                left: 0,
+                bottom: 0,
+                // height:369
+            }, 100)
+        }
+        else {
+            $(".shopRoller_Wrap").stop(true).animate({
+                left: -100,
+                bottom: -455
+            }, 50)
+        }
+    }
+
+
+}
+toShop();
 
 
 
@@ -346,7 +346,7 @@ sNav.init();
 // $('.shopRoller_list span').click(function () {
 //     var index = $(this).index();
 //     console.log(index);
-   
+
 //     $.ajax({
 //         url: "../data/shopList.json",
 //         data: 'get',
@@ -377,7 +377,7 @@ sNav.init();
 
 //             })  
 
-            
+
 //         }
 
 //     })
