@@ -282,37 +282,25 @@ body {
   float: left;
   margin-left: 100px;
   height: 78px;
-  width: 623px; }
-
-.part1_right form {
   width: 623px;
-  padding-top: 38px;
-  height: 40px;
-  /* overflow: hidden; */ }
+  margin-top: 30px; }
 
 .part1_txt {
   float: left;
-  width: 475px;
-  height: 25.1px;
+  width: 483px;
+  height: 26px;
   padding: 5px 3px 5px 5px;
-  border-width: 3px 0px 3px 3px;
-  border: solid #FF0036;
-  font-size: 14px;
-  color: #999; }
+  border: 2px solid #FF0036;
+  color: #333; }
 
 .part1_btn {
-  float: left;
-  width: 132px;
+  width: 128px;
   height: 40px;
-  /* box-sizing: content-box; */
   background-color: #FF0036;
-  border: 0px;
-  font-size: 16px;
-  font-weight: bold;
   color: #fff;
-  line-height: 40px;
-  /* border-width: 2px 0px; */
-  /* border: solid #FF0036; */ }
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid  #FF0036; }
 
 .search {
   width: 100%;

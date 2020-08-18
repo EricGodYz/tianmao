@@ -5,6 +5,7 @@ $('.nav').load('./header.html');
 $('.footer').load('./bottom.html');
 
 
+
 // part3
 // swiper轮播
 
@@ -29,10 +30,15 @@ for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
 
 
 // 轮播数据ajax请求
-$('.shopRoller_list span').click(function () {
+$('.part3_list li').mouseenter(function () {
     var index = $(this).index();
     console.log(index);
     // $(this).find('.part3_listwrap').css('display', 'block');
+    $(this).css({
+        background:"#fff",
+        
+    });
+    $(this).find('.aa').css('color','#2925E3')
     $(this).find('.part3_listwrap').stop(true).slideDown(3);
     $.ajax({
         url: "../data/index.json",
@@ -74,6 +80,7 @@ $('.shopRoller_list span').click(function () {
                     </div>
 
                     <div class="part3_imgs">
+                        <img src="${json[index].imgurl}" alt="">
                     </div>`;
 
             $('.part3_listwrap').append(newDiv);
@@ -82,7 +89,13 @@ $('.shopRoller_list span').click(function () {
     })
 })
 $('.part3_list li').mouseleave(function () {
+    $(this).css({
+        background:"rgba(3,3,3,.1)"
+       
+    });
+    $(this).find('.aa').css('color','#fff');
     $(this).find('.part3_listwrap').stop(true).slideUp(3);
+
     // $(this).find('.part3_listwrap').css('display', 'none');
 })
 

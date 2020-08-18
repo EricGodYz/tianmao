@@ -29,7 +29,7 @@ $.ajax({
                 var newDiv = `
                             <div class="shopDetail1">
                                 <div class="shopDetailWrap1">
-                                    <img src="../image/shopdetail_1.jpg" alt="">
+                                    <a href='./shopList.html'><img src="../image/shopdetail_1.jpg" alt=""></a>
                                 </div>
                             </div>
 
@@ -39,12 +39,12 @@ $.ajax({
                                     <!-- 内容左边 -->
                                     <div class="shopDetail_left">
                                         <div class="shopDetail_l1">
-                                            <img src="../image/shopdetail_6.jpg" alt="">
+                                            <img src="${json[index].imgurl}" alt="">
                                             <div class="shopDetail_mask"></div>
                                         </div>
 
                                         <ul class="shopDetail_l2">
-                                            <li><img src="../image/shopdetail_2.jpg" alt=""></li>
+                                            <li><img src="${json[index].imgurl}" alt=""></li>
                                             <li><img src="../image/shopdetail_3.jpg" alt=""></li>
                                             <li><img src="../image/shopdetail_4.jpg" alt=""></li>
                                             <li><img src="../image/shopdetail_5.jpg" alt=""></li>
@@ -63,11 +63,11 @@ $.ajax({
                                     <!-- 内容中间 -->
                                     <div class="shopDetail_center">
                                         <div class="shopdetail_l1max">
-                                            <img src="../image/shopdetail_6s.jpg" alt="">
+                                            <img src="${json[index].imgurl}" alt="">
                                         </div>
                                         <div class="shopDe_con1">
                                             <h1>acornfresh 新西兰进口三文鱼 新鲜冷冻海鲜生鲜帝王三文鱼肉400g</h1>
-                                            <p>新西兰帝王鲑 上乘三文鱼 洁净水域 海岛养</p>
+                                            <p>${json[index].tits}</p>
                                         </div>
                                         <div class="shopDe_con2">
                                             <img src="../image/shopdetail_con1.png" alt="">
@@ -85,7 +85,7 @@ $.ajax({
                                                 <dt>吃货狂欢价</dt>
                                                 <dd>
                                                     <i>￥</i>
-                                                    <em>209.00</em>
+                                                    <em>${json[index].kuang}</em>
                                                 </dd>
                                             </dl>
                                             <div class="shopDe_con33">

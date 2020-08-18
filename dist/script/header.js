@@ -1,3 +1,13 @@
+
+// 接受本地化数据
+var userNa = localStorage.getItem('user');
+var user = JSON.parse(userNa);
+console.log(user);
+// 头部的处理
+$('.nava').text(user);
+$('.navz').click(function(){
+    $('.nava').text('登录');
+})
 // 导航的头部
 // 我的淘宝
 $('.nav1').mouseenter(function () {
@@ -60,6 +70,10 @@ $('.nav3').mouseleave(function () {
     $(this).css('border', 'none');
 });
 
+// 输入框的问题
+$('.part1_txt').click(function() {
+    $(".part1_txt").val('');
+})
 
 
 // // 顶部效果

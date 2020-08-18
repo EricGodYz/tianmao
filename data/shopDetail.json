@@ -1,6 +1,10 @@
 [
-    {"tit1":"test","price":"2233","code":"01"},
-    {"tit1":"test","price":"122","code":"02"},
-    {"tit1":"test","price":"222"},
-    {"tit1":"test","price":"33"}
+    
+    {"tits":"哈根达斯经典组合","imgurl":"../image/shoplist2_2.jpg","price":"316","kuang":"111","code":"01"},
+    {"tits":"新西兰冰淇淋2L装","imgurl":"../image/shoplist2_3.jpg","price":" 123","kuang":"222","code":"02"},
+    {"tits":"冰岛大西洋真鳕鱼","imgurl":"../image/shoplist2_4.jpg","price":"333","kuang":"333","code":"03"},
+    {"tits":"印度大虾仁500g","imgurl":"../image/shoplist2_5.jpg","price":" 444","kuang":"113","code":"04"},
+    {"tits":"加拿大3A牛排套餐","imgurl":"../image/shoplist2_7.jpg","price":"555","kuang":"551","code":"05"},
+    {"tits":"挪威三文鱼","imgurl":"../image/shoplist2_8.jpg","price":" 666","kuang":"252.8","code":"06"},
+    {"tits":"澳洲原切板犍牛肉","imgurl":"../image/shoplist2_9.jpg","price":"777","kuang":"99","code":"07"}
 ]

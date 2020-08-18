@@ -112,15 +112,19 @@
     // height: 32px;
     // position: relative;
     line-height: 32px;
+    height: 32px;
     
 }
 .part3_list .part3_lis i{
     font-size: 12px;
     color: #999;
     margin-left: 14px;
+    float: left;
 
 }
 .part3_list .part3_lis a{
+    float: left;
+    display: block;
     font-size: 12px;
     color: #fff;
     padding-left:8px ;
@@ -176,9 +180,13 @@
     width: 186px;
     height: 480px;
     padding: 20px 10px 21px 10px;
-    background-color: lawngreen;
+    // background-color: lawngreen;
 }
+.part3_listwrap .part3_imgs img{
+    display: block;
+    width: 186px;
 
+}
 // 轮播图的样式
 .part3Wrap .swiper-container{
     width: 1230px;
