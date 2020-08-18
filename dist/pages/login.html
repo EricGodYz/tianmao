@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,77 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/login.css">
 </head>
+
 <body>
-     <!-- nav导航 -->
-     <div class="nav"></div>
-     <!-- part1搜索-->
-     <div class="part1"></div>
+    <!-- nav导航 -->
+    <div class="nav"></div>
+    <!-- part1搜索-->
+    <div class="part1"></div>
 
     <!-- 主要内容 -->
     <div class="logincon">
         <div class="loginconWrap">
-            <img src="../image/login_1.jpg" alt="">
+            <img class="loginWrap_con1" src="../image/login_1.jpg" alt="">
             <div class="loginright">
-                
+                <ul class="loginright_icon">
+                    <li ><img src="../image/loginright_con6.png" alt=""></li>
+                    <li class="iconshow"><img src="../image/loginright_con5.png" alt=""></li>
+                </ul>
+                <div class="loginright1 loginright1active">
+                    <ul class="loginright_con1">
+                        <li class="loginshow">密码登录</li>
+                        <li>短信登录</li>
+                    </ul>
+                    <div class="loginright_con2 login_active">
+                        <div class="loginright_input">
+                            <i><img src="../image/loginright_con1.png" alt=""></i>
+                            <input type="text" value="会员名/邮箱/手机号">
+                        </div>
+                        <div class="loginright_input login_input">
+                            <i><img src="../image/loginright_con2.png" alt=""></i>
+                            <input type="text" value="请输入登录密码">
+                        </div>
+                        <button>登录</button>
+                        <div class="loginright_con21">
+                            <a href="">免费注册</a>
+
+                            <a href="">忘记用户名</a>
+                            <a href="">忘记密码</a>
+                        </div>
+                    </div>
+                    <div class="loginright_con2 ">
+                        <div class="loginright_input2">
+                            <i><img src="../image/loginright_con3.png" alt=""></i>
+                            <select name="" id="">
+                                <option>+86</option>
+                                <option>+123</option>
+                            </select>
+                            <input type="text" value="请输入手机号">
+                        </div>
+                        <div class="loginright_input login_input">
+                            <i><img src="../image/loginright_con4.png" alt=""></i>
+                            <input type="text" value="请输入验证码">
+                            <a href="">获取验证码</a>
+                        </div>
+                        <button>登录</button>
+                        <div class="loginright_con21">
+                            <a href="">免费注册</a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loginright1 ">
+                    <span>手机扫码,安全登录</span>
+                    <img src="../image/loginright_con7.png" alt="">
+                </div>
+
+
             </div>
         </div>
     </div>
-     
+
     <div class="footer"> </div>
 
 
@@ -32,4 +88,5 @@
     <script src="../script/jquery-1.8.3.js"></script>
     <script src="../script/login.js"></script>
 </body>
+
 </html>

@@ -60,7 +60,9 @@ $('.nav3').mouseleave(function () {
     $(this).css('border', 'none');
 });
 
-// 顶部效果
+
+
+// // 顶部效果
 var topSearch = {
     init: function () {
         this.bindEvent();

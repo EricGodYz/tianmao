@@ -28,7 +28,7 @@ $.ajax({
 
         // $('.shoplist2_Wrap').html('');
         $.each(json, function (index, item) {
-            var newLi = `<li class="shoplist2_con1">
+            var newLi = `<a href="./shopDetail.html"><li class="shoplist2_con1" code="${json[index].code}">
                         <img class="shoplist2_conimg"  src="${json[index].imgurl}" alt="">
                         <div class="shoplist2_box1">
                             <p>${json[index].p}</p>
@@ -45,7 +45,7 @@ $.ajax({
                                 <em class=""></em>
                             </div>
                         </div>
-                     </li>`;
+                     </li></a>`;
             $('.shoplist2 .shoplist2_imgs').append(newLi);
 
         })
@@ -92,6 +92,16 @@ $.ajax({
 
 })
 
+
+// 数据存储
+$('.shoplist2').on('click','.shoplist2_con1',function(){
+    var goodsAttr = [];
+    var num = $(this).attr('code');
+    console.log(num);
+    goodsAttr.push({"code":num});
+    // console.log(goodsAttr);
+    localStorage.setItem('shoplist2_con1',JSON.stringify(goodsAttr));
+})
 
 
 var toshop = {
@@ -156,6 +166,7 @@ var toshop = {
 toshop.init();
 
 
+
 //导航缩略图（返回顶部等）
 var sNav = {
     init: function () {
@@ -214,63 +225,63 @@ sNav.init();
 
 
 //
-function toShop() {
-    var flag1 = false;
-    window.onscroll = function () {
-        let h = document.body.scrollTop || document.documentElement.scrollTop;
-        console.log(h);
-        if (h > 700) {
-            flag1 = true;
-        }
-        if (h > 500 && h <= 1300) {
-            $(".shopdapai").css({
-                background: "#333"
-            })
-        } else {
-            $(".shopdapai").css({
-                background: " #8035fb"
-            })
-        }
-        if (h > 1300 && h <= 1700) {
-            $(".shopjinkou").css({
-                background: "#333"
-            })
-        } else {
-            $(".shopjinkou").css({
-                background: " #8035fb"
-            })
-        }
-        if (h > 1700 && h <= 2200) {
-            $(".shopbaiyuan").css({
-                background: "#333"
-            })
-        } else {
-            $(".shopbaiyuan").css({
-                background: " #8035fb"
-            })
-        }
-        if (h < 700) {
-            flag1 = false;
-        }
-        // console.log(flag)
-        if (flag1) {
-            $('.shopRoller_Wrap').stop(true).animate({
-                left: 0,
-                bottom: 0,
-                // height:369
-            }, 100)
-        }
-        else {
-            $(".shopRoller_Wrap").stop(true).animate({
-                left: -100,
-                bottom: -455
-            }, 50)
-        }
-    }
+// function toShop() {
+//     var flag1 = false;
+//     window.onscroll = function () {
+//         let h = document.body.scrollTop || document.documentElement.scrollTop;
+//         console.log(h);
+//         if (h > 700) {
+//             flag1 = true;
+//         }
+//         if (h > 500 && h <= 1300) {
+//             $(".shopdapai").css({
+//                 background: "#333"
+//             })
+//         } else {
+//             $(".shopdapai").css({
+//                 background: " #8035fb"
+//             })
+//         }
+//         if (h > 1300 && h <= 1700) {
+//             $(".shopjinkou").css({
+//                 background: "#333"
+//             })
+//         } else {
+//             $(".shopjinkou").css({
+//                 background: " #8035fb"
+//             })
+//         }
+//         if (h > 1700 && h <= 2200) {
+//             $(".shopbaiyuan").css({
+//                 background: "#333"
+//             })
+//         } else {
+//             $(".shopbaiyuan").css({
+//                 background: " #8035fb"
+//             })
+//         }
+//         if (h < 700) {
+//             flag1 = false;
+//         }
+//         // console.log(flag)
+//         if (flag1) {
+//             $('.shopRoller_Wrap').stop(true).animate({
+//                 left: 0,
+//                 bottom: 0,
+//                 // height:369
+//             }, 100)
+//         }
+//         else {
+//             $(".shopRoller_Wrap").stop(true).animate({
+//                 left: -100,
+//                 bottom: -455
+//             }, 50)
+//         }
+//     }
 
 
-}
-toShop();
+// }
+// toShop();
 
 
 
