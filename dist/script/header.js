@@ -109,12 +109,21 @@ var topSearch = {
                     background: "rgba(0,0,0,.6)"
                 })
             }
-            if (h >1700 && h <=2200) {
+            if (h >1700 && h <=2500) {
                 $(".roller .meili").css({
                     background: "yellow"
                 })
             } else {
                 $(".roller .meili").css({
+                    background: "rgba(0,0,0,.6)"
+                })
+            }
+            if (h >2500 && h <=3000) {
+                $(".roller .jujia").css({
+                    background: "orange"
+                })
+            } else {
+                $(".roller .jujia").css({
                     background: "rgba(0,0,0,.6)"
                 })
             }

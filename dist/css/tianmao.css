@@ -559,6 +559,11 @@
   display: block;
   margin-left: -165px; }
 
+.part7 {
+  width: 100%;
+  margin-top: 20px;
+  height: 656px; }
+
 .part7_top {
   height: 28px; }
 
@@ -586,6 +591,11 @@
   margin-left: 10px;
   line-height: 28px;
   color: #000; }
+
+.part8 {
+  width: 100%;
+  margin-top: 20px;
+  height: 656px; }
 
 .roller {
   width: 35px;

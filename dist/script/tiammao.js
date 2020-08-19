@@ -32,7 +32,7 @@ for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
 // 轮播数据ajax请求
 $('.part3_list li').mouseenter(function () {
     var index = $(this).index();
-    console.log(index);
+    // console.log(index);
     // $(this).find('.part3_listwrap').css('display', 'block');
     $(this).css({
         background:"#fff",
@@ -100,6 +100,96 @@ $('.part3_list li').mouseleave(function () {
 })
 
 
+// part5部分的ajax请求
+$.ajax({
+    url:'../data/part5.json',
+    data:'get',
+    dataType:'json',
+    success:function(json){
+        $.each(json,function(index,item){
+            var newLi =`
+                        <li class="part5_lis">
+                                <a href="#">
+                                    <div class="part5_img">
+                                        <img src="${json[index].img}" alt="">
+                                    </div>
+                                    <div class="part5_mask">
+                                        <span>${json[index].tit1}</span>
+                                        <em>${json[index].tit2}</em>
+                                    </div>
+                                </a>
+                            </li>
+                        `;
+            $('.part5_list').append(newLi);
+        })
+    }
+})
+
+// part6的数据请求部分
+$.ajax({
+    url:'../data/part6.json',
+    data:'get',
+    dataType:"json",
+    success:function(json){
+        $.each(json,function(index,item){
+            var newA = ` <a class="part6_r2 " href="#">
+                        <div class="part6_w1">
+                            <img src="${json[index].img}" alt="">
+                            <div class="part6_w11">${json[index].tit1}</div>
+                            <div class="part6_price">${json[index].price}</div>
+                            <div class="part6_mask"></div>
+                        </div>
+                 </a>`;
+            $('.part6_rights').append(newA);
+
+        })
+    }
+})
+
+// part7的数据请求部分
+$.ajax({
+    url:'../data/part7.json',
+    data:'get',
+    dataType:"json",
+    success:function(json){
+        $.each(json,function(index,item){
+           var newA = `<a class="part6_r2" href="#">
+                        <div class="part6_w1">
+                            <img src="${json[index].img2}" alt="">
+                            <div class="part6_w11">${json[index].tit1}</div>
+                            <div class="part6_price">${json[index].price}</div>
+                            <div class="part6_mask"></div>
+                        </div>
+             </a>`
+             $('.part7_rights').append(newA);
+
+
+        })
+    }
+})
+// part8的数据请求部分
+$.ajax({
+    url:'../data/part8.json',
+    data:'get',
+    dataType:"json",
+    success:function(json){
+        $.each(json,function(index,item){
+           var newA = `<a class="part6_r2" href="#">
+                        <div class="part6_w1">
+                            <img src="${json[index].img2}" alt="">
+                            <div class="part6_w11">${json[index].tit1}</div>
+                            <div class="part6_price">${json[index].price}</div>
+                            <div class="part6_mask"></div>
+                        </div>
+             </a>`
+             $('.part8_rights').append(newA);
+
+
+        })
+    }
+})
+
+
 
 // tab切换
 
@@ -152,23 +242,23 @@ $('.part6_tab1 li').mouseenter(function () {
         })
         //美丽人生
         this.meili.click(function(){   
-            $(_this.docu).stop(true).animate({scrollTop:1900},2000);
+            $(_this.docu).stop(true).animate({scrollTop:1900},500);
         })
         // 潮流酷玩
         this.chaodian.click(function(){   
-            $(_this.docu).stop(true).animate({scrollTop:1900},2000);
+            $(_this.docu).stop(true).animate({scrollTop:1900},500);
         })
         // 居家生活
         this.jujia.click(function(){   
-            $(_this.docu).stop(true).animate({scrollTop:1900},2000);
+            $(_this.docu).stop(true).animate({scrollTop:2700},500);
         })
         // 打造爱巢
         this.aichao.click(function(){   
-            $(_this.docu).stop(true).animate({scrollTop:1900},2000);
+            $(_this.docu).stop(true).animate({scrollTop:1900},500);
         })
         // 户外出行
         this.huwai.click(function(){   
-            $(_this.docu).stop(true).animate({scrollTop:1900},2000);
+            $(_this.docu).stop(true).animate({scrollTop:2400},500);
         })
         // 猜你喜欢
         this.xihuan.click(function(){

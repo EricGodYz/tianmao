@@ -10,21 +10,21 @@ $('.footer').load('./bottom.html');
 // 数据的渲染
 var code = localStorage.getItem('shoplist2_con1');
 var code = JSON.parse(code);
-console.log(code[0].code);
+console.log(code[0]);
 
 
 
 // 进行商品列表的全部渲染
 $.ajax({
-    url:'../data/shopDetail.json',
-    type:'get',
-    dataType:'json',
-    success:function(json){
-        $.each(json,function(index,item){
-            console.log(json);
-            if(code[0].code === json[index].code){
+    url: '../data/shopDetail.json',
+    type: 'get',
+    dataType: 'json',
+    success: function (json) {
+        $.each(json, function (index, item) {
+            // console.log(json);
+            if (code[0].code === json[index].code) {
                 // $('.shopDetailSum').html('');
-                console.log(json);
+
                 console.log(json[index].code);
                 var newDiv = `
                             <div class="shopDetail1">
@@ -39,16 +39,16 @@ $.ajax({
                                     <!-- 内容左边 -->
                                     <div class="shopDetail_left">
                                         <div class="shopDetail_l1">
-                                            <img src="${json[index].imgurl}" alt="">
+                                            <img src="${json[index].img1}" alt="">
                                             <div class="shopDetail_mask"></div>
                                         </div>
 
                                         <ul class="shopDetail_l2">
-                                            <li><img src="${json[index].imgurl}" alt=""></li>
-                                            <li><img src="../image/shopdetail_3.jpg" alt=""></li>
-                                            <li><img src="../image/shopdetail_4.jpg" alt=""></li>
-                                            <li><img src="../image/shopdetail_5.jpg" alt=""></li>
-                                            <li><img src="../image/shopdetail_6.jpg" alt=""></li>
+                                            <li><img src="${json[index].img1}" alt=""></li>
+                                            <li><img src="${json[index].img2}" alt=""></li>
+                                            <li><img src="${json[index].img3}" alt=""></li>
+                                            <li><img src="${json[index].img4}" alt=""></li>
+                                            <li><img src="${json[index].img5}" alt=""></li>
                                         </ul>
                                         <div class="shopDetail_l3">
                                             <div class="shopdetail_l3con">
@@ -63,11 +63,11 @@ $.ajax({
                                     <!-- 内容中间 -->
                                     <div class="shopDetail_center">
                                         <div class="shopdetail_l1max">
-                                            <img src="${json[index].imgurl}" alt="">
+                                            <img src="${json[index].img1s}" alt="">
                                         </div>
                                         <div class="shopDe_con1">
-                                            <h1>acornfresh 新西兰进口三文鱼 新鲜冷冻海鲜生鲜帝王三文鱼肉400g</h1>
-                                            <p>${json[index].tits}</p>
+                                            <h1>${json[index].tit2}</h1>
+                                            <p>${json[index].tit1}</p>
                                         </div>
                                         <div class="shopDe_con2">
                                             <img src="../image/shopdetail_con1.png" alt="">
@@ -173,7 +173,7 @@ $.ajax({
                                     </div>
                                 </div>
                         </div>`;
-                    $('.shopDetailSum').append(newDiv);
+                $('.shopDetailSum').append(newDiv);
 
             }
         })
@@ -207,7 +207,7 @@ function move() {
         // console.log($(document).scrollTop());
         var maskX = e.clientX - $('.shopDetail_l1').offset().left - $('.shopDetail_mask').width() / 2;
         var maskY = e.clientY - $('.shopDetail_l1').offset().top - $('.shopDetail_mask').height() / 2 + $(document).scrollTop();
-        
+
         if (maskX <= 0) {
             maskX = 0;
         }
@@ -245,12 +245,13 @@ function move() {
 move();
 
 function add() {
-   
+
     $('.shopDetailSum').on('mouseenter', '.shopDetail_l2 li', function () {
         var index = $(this).index();
         console.log(index);
-        $('.shopDetail_l1 img').attr('src', '../image/shopdetail_'+(index+2) +'.jpg')
-        $('.shopdetail_l1max img').attr('src', '../image/shopdetail_' +(index+2)+'s.jpg');
+        $('.shopDetail_l1 img').attr('src', '../image/detail_'+code[0].code+(index+1) +'.jpg')
+        $('.shopdetail_l1max img').attr('src', '../image/detail_'+code[0].code +(index+1)+'s.jpg');
+      
     })
 }
 add();

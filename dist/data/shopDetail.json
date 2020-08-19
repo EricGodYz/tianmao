@@ -1,10 +1,18 @@
 [
     
-    {"tits":"哈根达斯经典组合","imgurl":"../image/shoplist2_2.jpg","price":"316","kuang":"111","code":"01"},
-    {"tits":"新西兰冰淇淋2L装","imgurl":"../image/shoplist2_3.jpg","price":" 123","kuang":"222","code":"02"},
-    {"tits":"冰岛大西洋真鳕鱼","imgurl":"../image/shoplist2_4.jpg","price":"333","kuang":"333","code":"03"},
-    {"tits":"印度大虾仁500g","imgurl":"../image/shoplist2_5.jpg","price":" 444","kuang":"113","code":"04"},
-    {"tits":"加拿大3A牛排套餐","imgurl":"../image/shoplist2_7.jpg","price":"555","kuang":"551","code":"05"},
-    {"tits":"挪威三文鱼","imgurl":"../image/shoplist2_8.jpg","price":" 666","kuang":"252.8","code":"06"},
-    {"tits":"澳洲原切板犍牛肉","imgurl":"../image/shoplist2_9.jpg","price":"777","kuang":"99","code":"07"}
+    {"tit1":"哈根达斯经典组合","tit2":"哈根达斯冰激淋2个品脱+4个小纸杯组合装 顺丰冷链配送到家","imgurl":"../image/shoplist2_2.jpg","price":"316","kuang":"111","code":"1",
+     "img1":"../image/detail_11.jpg","img1s":"../image/detail_11s.jpg","img2":"../image/detail_12.jpg","img2s":"../image/detail_12s.jpg","img3":"../image/detail_13.jpg","img3s":"../image/detail_13s.jpg",
+     "img4":"../image/detail_14.jpg","img4s":"../image/detail_14s.jpg","img5":"../image/detail_15.jpg","img5s":"../image/detail_15s.jpg"},
+
+
+    {"tit1":"新西兰冰淇淋2L装","tit2":"【九月初发货】 tiptop新西兰进口雪糕大桶装焦糖冰激淋网红冰激淋","imgurl":"../image/shoplist2_3.jpg","price":" 123","kuang":"222","code":"2",
+        "img1":"../image/detail_21.jpg","img1s":"../image/detail_21s.jpg","img2":"../image/detail_22.jpg","img2s":"../image/detail_22s.jpg","img3":"../image/detail_23.jpg","img3s":"../image/detail_23s.jpg",
+        "img4":"../image/detail_24.jpg","img4s":"../image/detail_24s.jpg","img5":"../image/detail_25.jpg","img5s":"../image/detail_25s.jpg" },
+    {"tit1":"冰岛大西洋真鳕鱼","tit2":"acornfresh大西洋真鳕鱼新鲜宝宝辅食鳕鱼片海鲜雪鱼块带皮鱼400g","imgurl":"../image/shoplist2_4.jpg","price":"333","kuang":"333","code":"3",
+        "img1":"../image/detail_31.jpg","img1s":"../image/detail_31s.jpg","img2":"../image/detail_32.jpg","img2s":"../image/detail_32s.jpg","img3":"../image/detail_33.jpg","img3s":"../image/detail_33s.jpg",
+        "img4":"../image/detail_34.jpg","img4s":"../image/detail_34s.jpg","img5":"../image/detail_35.jpg","img5s":"../image/detail_35s.jpg" },
+    {"tit1":"印度大虾仁500g","tit2":"kingoscar欧斯卡王虾原装进口南美白虾仁鲜活海鲜水产大虾仁 500g","imgurl":"../image/shoplist2_5.jpg","price":" 444","kuang":"113","code":"4"},
+    {"tit1":"加拿大3A牛排套餐","tit2":"太阳谷新鲜整块原切雪花牛排家用进口加拿大眼肉西冷牛扒套餐","imgurl":"../image/shoplist2_7.jpg","price":"555","kuang":"551","code":"5"},
+    {"tit1":"挪威三文鱼","tit2":"acornfresh进口三文鱼宝宝辅食新鲜生鱼片中段冷冻三文鱼肉400g","imgurl":"../image/shoplist2_8.jpg","price":" 666","kuang":"252.8","code":"6"},
+    {"tit1":"澳洲原切板犍牛肉","tit2":"太阳谷新鲜澳洲板腱谷饲进口家庭原切厚切牡蛎牛排套餐牛肉6片","imgurl":"../image/shoplist2_9.jpg","price":"777","kuang":"99","code":"7"}
 ]
